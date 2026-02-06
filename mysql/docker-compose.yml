@@ -6,6 +6,9 @@ services:
     # restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: mldev_app
+      MYSQL_USER: lamldm
+      MYSQL_PASSWORD: Minhlam@123
     ports:
       - "${MYSQL_PORT}:3306"
     volumes:
