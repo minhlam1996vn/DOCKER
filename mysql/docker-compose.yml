@@ -1,9 +1,9 @@
 services:
   mysql:
     image: mysql:8.0
-    # platform: linux/arm64
+    platform: linux/arm64
     container_name: mldev_mysql
-    # restart: unless-stopped
+    restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: mldev_app
